@@ -25,7 +25,16 @@ class MyApp extends StatelessWidget {
             bodyMedium: TextStyle(
               color: Color.fromARGB(255,137,186,243),
             ),
+            bodySmall: TextStyle(color: Colors.white,
+            fontSize: 12,
+            fontWeight: FontWeight.bold),
         ),
+      elevatedButtonTheme:ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          //backgroundColor: Colors.indigo,
+          //foregroundColor: Colors.white,
+        ),
+      ),
          useMaterial3: true,
       ),
       home: const StartScreen(),
