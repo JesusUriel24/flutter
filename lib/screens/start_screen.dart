@@ -49,7 +49,13 @@ class  _StartScreenState extends State <StartScreen> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             _percentage(),
+            const SizedBox(
+              width: 10,
+            ),
             _smallDividier(),
+            const SizedBox(
+              width: 10,
+            ),
             _hydration(),
           ],
         ),
@@ -102,6 +108,18 @@ Widget _smallDividier(){
 }
 
 Widget _hydration(){
+  return Column(
+    children: [
+      _intervalBar(),
+      Text(
+        'Hidratación',
+        style: Theme.of(context).textTheme.bodySmall,
+      ),
+    ],
+  );
+}
+
+Widget _intervalBar(){
   return Text(
               '1.0',
               style: Theme.of(context).textTheme.headlineSmall,
